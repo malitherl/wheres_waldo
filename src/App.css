@@ -1,0 +1,188 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.Nav-link {
+  margin: 20px;
+  display: inline-flex; 
+  justify-content: center;
+  text-decoration: none;
+  color:#282c34; 
+}
+
+a.Nav-link:hover {
+  color: #61dafb;
+}
+a.Nav-link:visited {
+  color: brown;
+  text-decoration: none;
+}
+.backdrop {
+  position: fixed;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.4);
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+}
+
+.bg {
+  opacity: 0.5;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: auto;
+  background-size:contain;
+  z-index: 0;
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
+}
+
+.bodyText{
+  width: fit-content;
+  height:fit-content;
+  padding: 10px;
+  padding-bottom: 15px;
+  border-radius: 5px ;
+  box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  color: rgb(15, 15, 15);
+  position:relative;
+  overflow: hidden;
+  z-index: 999;
+  background-color: rgba(255, 255, 255, .7);
+  top: 30%;
+}
+
+
+button.submit {
+  margin-top: 8px;
+  background-color: brown;
+  color: antiquewhite;
+  border: none;
+  padding: 4px;
+  border-radius: 4px;
+}
+
+form {
+  display: flex; 
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 8px;
+}
+
+.game {
+  background-color: brown; 
+
+}
+
+input {
+  margin-top: 8px;
+}
+
+.maintext {
+  display: grid;
+  justify-content: center;
+  text-align: center; 
+  background-color: rgb(238, 236, 228);
+  min-height: 1200px;
+  position: relative;
+}
+.scoreModal{
+  z-index: 10;
+  width: fit-content;
+  height: fit-content;
+  position: relative; 
+  top: 50%; 
+  padding: 10px;
+  background-color: rgba(255, 255, 255, .7);
+  box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 5px;
+  left: 15%;
+
+}
+
+.scoreText {
+  width: fit-content;
+  height: fit-content;
+  padding: 10px;
+  padding-bottom: 15px;
+  border-radius: 5px ;
+  box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  color: rgb(15, 15, 15);
+  position:relative;
+  overflow: hidden;
+  z-index: 999;
+  background-color: rgba(255, 255, 255, .7);
+  top: 30%;
+}
+
+
+.selectionText {
+  width: 1160px;
+  height:500px;
+  padding: 10px;
+  padding-bottom: 15px;
+  border-radius: 5px ;
+  box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  color: rgb(15, 15, 15);
+  position:relative;
+  overflow: hidden;
+  z-index: 999;
+  background-color: rgba(255, 255, 255, .7);
+  top: 30%;
+}
+
+.timer {
+  padding: 5px;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  background-color: rgba(255, 255, 255.1);
+  width: fit-content;
+  display: grid;
+  justify-content: center;
+  position: relative;
+  left: 50%;
+}
+
+td, th {
+  padding: 10px;
+  text-align: center;
+  color: #282c34;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
